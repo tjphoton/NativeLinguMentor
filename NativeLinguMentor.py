@@ -96,7 +96,7 @@ with col1:
     input_text = st.text_area("**Your paragraph(s) here: (one example provided):**",
                               example_paragraph1,
                               height=150)
-    submitted = st.button(':violet[Click here to improve It!]')
+    submitted = st.button(':violet[AI, please help me polish it!]')
 
     if submitted & (input_text != ""):
         with st.spinner(text="This may take a moment..."):
@@ -132,8 +132,6 @@ with col2:
         st.divider()
         st.write("**Areas for Improvement:**")
         st.write(advices)
-
-
 
 with st.expander("See raw JASON output"):
     if submitted:
