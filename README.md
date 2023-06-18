@@ -10,11 +10,11 @@ for more effective communication.
 
 ## Features
 
-- Text Analysis: NativeLinguMentor efficiently analyzes the input text and breaks it down into individual sentences for in-depth assessment.
-- Grammar and Syntax Correction: NativeLinguMentor identifies grammatical and syntax errors within the sentences, and automatically suggests corrections to ensure accuracy in the language.
-- Natural Language Enhancements: NativeLinguMentor refines sentences to make them sound more natural and native-like by suggesting alternative vocabulary, expressions, and sentence structures.
-- Revision Insights: For every revision made, the app explains the reasoning behind the change, helping you understand why a particular correction or enhancement is suggested.
-- Targeted Learning Advice: Based on the analysis of the text, the app provides specific advice on areas for improvement, such as expanding vocabulary, using idiomatic expressions, or improving sentence structure.
+- **Text Analysis**: NativeLinguMentor efficiently analyzes the input text and breaks it down into individual sentences for in-depth assessment.
+- **Grammar and Syntax Correction**: NativeLinguMentor identifies grammatical and syntax errors within the sentences, and automatically suggests corrections to ensure accuracy in the language.
+- **Natural Language Enhancements**: NativeLinguMentor refines sentences to make them sound more natural and native-like by suggesting alternative vocabulary, expressions, and sentence structures.
+- **Revision Insights**: For every revision made, the app explains the reasoning behind the change, helping you understand why a particular correction or enhancement is suggested.
+- **Targeted Learning Advice**: Based on the analysis of the text, the app provides specific advice on areas for improvement, such as expanding vocabulary, using idiomatic expressions, or improving sentence structure.
 
 These key features make NativeLinguMentor a comprehensive and effective tool to polish English language skills and achieve a native-like flair in communication.
 
