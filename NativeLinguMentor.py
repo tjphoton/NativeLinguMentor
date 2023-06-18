@@ -109,10 +109,16 @@ with col1:
 
         corrections_markdown = ""
         for correction in corrections:
-            corrections_markdown += " - **Original:** " + correction['Original sentence'] +"\n"
+            corrections_markdown += "- **Original:** " + correction['Original sentence'] +"\n"
             if correction['Original sentence'] != correction['Revised sentence']:
-                corrections_markdown += "     - **Revised:** " + correction['Revised sentence'] +"\n"
-            corrections_markdown += "     - **Reasons:** " + correction['Reasons'] +"\n"
+                corrections_markdown += "  - **Revised:** " + correction['Revised sentence'] +"\n"
+            if type(correction['Reasons']) is str:
+                corrections_markdown += "  - **Reasons:** " + correction['Reasons'] +"\n"
+            elif type(correction['Reasons']) is list:
+                reasons_str = ""
+                for i, reason in enumerate(correction['Reasons'], start=1):
+                    reasons_str += "    " + str(i) + ". " + reason + "\n"
+                corrections_markdown += "  - **Reasons:** \n" + reasons_str + "\n"
 
         st.divider()
         st.write("**Sentence by Sentence Correction:**")
