@@ -69,7 +69,9 @@ def predict(student_paragraphs):
     lingu_prompt_messages = lingu_prompt.format_messages(student_paragraphs=student_paragraphs,
                                                          format_instructions=format_instructions)
 
+    # chat = ChatOpenAI(temperature=0.0, model="gpt-4")
     chat = ChatOpenAI(temperature=0.0)
+
     response = chat(lingu_prompt_messages)
     output_dict = output_parser.parse(response.content)
 
@@ -80,15 +82,18 @@ st.set_page_config(page_title="NativeLinguMentor",
                    layout="wide",
                    page_icon=":robot:")
 
-st.header("NativeLinguMentor")
+st.header("NativeLinguMentor $^{beta}$")
+st.caption("© June 18, 2023 Xinjie Qiu ℠")
 st.caption("""
-        _**NativeLinguMentor** is your personal intelligent English language mentor designed to 
-        polish your English skills for a native-like flair. Powered by innovative technology, 
-        the app deconstructs text into sentences, identifies and corrects grammar and syntax issues, 
-        and provides revisions to ensure a native and fluent tone. **NativeLinguMentor** provides 
-        targeted tips to refine your language skills and empowers users with the tools needed 
-        for more effective communication. © 2023 Xinjie Qiu ℠_
+        **NativeLinguMentor $^{beta}$** is your personal, intelligent English language mentor designed to polish your English skills for a native-like flair. Powered by innovative technology, NativeLinguMentor's key features include:
+        - **Grammar and Syntax Correction**: Identifies grammatical and syntax errors within sentences and automatically suggests corrections.
+        - **Natural Language Enhancements**: Refines sentences to make them sound more natural and native-like by suggesting alternative vocabulary, expressions, and sentence structures.
+        - **Revision Insights**: Explains the reasoning behind every revision made, aiding in understanding and learning.
+        - **Targeted Learning Advice**: Provides specific advice on areas for improvement, such as expanding vocabulary, using idiomatic expressions, or improving sentence structure.
+        
+        NativeLinguMentor is a comprehensive and effective tool for assessing and refining your language skills, empowering you for more effective communication.
         """)
+st.divider()
 
 col1, col2 = st.columns(2)
 
